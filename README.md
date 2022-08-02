@@ -15,7 +15,7 @@ The following files are given in the repository (or directly in `.zip` archive):
     of your document, proper tagging style, layout features, etc;
 -   `te_sample_final.pdf` - sample file with `final` option for prepublication;
 -   `te_sample.tex` - source file for the instructions paper `te_sample.pdf`;
--   `figure1.eps`, `figure1.pdf` - sample figures for `te_sample.pdf`.
+-   `figure_sample.eps`, `figure_sample.pdf` - sample figures for `te_sample.pdf`.
 
 ## Setup
 
