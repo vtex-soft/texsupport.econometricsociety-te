@@ -811,6 +811,16 @@ FUNCTION {format.vol.num.pages}
       "volume" bibinfo.check
     }
   if$
+  number "number" bibinfo.check duplicate$ empty$ 'skip$
+    {
+      swap$ duplicate$ empty$
+        { "there's a number but no volume in " cite$ * warning$ }
+        'skip$
+      if$
+      swap$
+      "(" swap$ * ")" *
+    }
+  if$ *
   eid empty$
     { format.journal.pages }
     { format.journal.eid }
@@ -1515,4 +1525,3 @@ EXECUTE {end.bib}
 %% End of customized bst file
 %%
 %% End of file `te.bst'.
-
