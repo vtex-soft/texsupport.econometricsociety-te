@@ -21,6 +21,10 @@ The following files are given in the repository (or directly in `.zip` archive):
     of your document, proper tagging style, layout features, etc;
 -   `te_sample_final.pdf` - sample file with `final` option for prepublication;
 -   `te_sample.tex` - source file for the instructions paper `te_sample.pdf`;
+-   `te_supp_template.tex` - the template file should be used for supplement preparation;
+-   `te_supp_sample.pdf` - sample file and instructions for the preparation of a
+    supplementary material in LaTeX;
+-   `te_supp_sample.tex` - source file for the instructions paper `te_supp_sample.pdf`;
 -   `figure_sample.eps`, `figure_sample.pdf` - sample figures for `te_sample.pdf`.
 -   `te.bst` - BibTeX styles to prepare bibliography file.
     More information can be found [here](http://www.bibtex.org/Using/) 

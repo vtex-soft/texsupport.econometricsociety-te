@@ -1,6 +1,4 @@
-% use option [draft] for initial submission
-%            [final] for the prepublication
-\documentclass[te,nameyear,draft]{econsocart}
+\documentclass[te,nameyear,final,supplement]{econsocart}
 %
 %\usepackage{}
 \RequirePackage[colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue,pagebackref]{hyperref}
@@ -51,8 +49,8 @@
 
 \begin{frontmatter}
 
-\title{A sample article title}
-\runtitle{A sample running head title}
+\title{Supplement to ``Title of the Main Article''}
+\runtitle{A Sample Running Head Title}
 
 \begin{aug}
 % use \particle for den|der|de|van|von (only lc!)
@@ -81,49 +79,28 @@
 \orgname{University}}
 \end{aug}
 
-%% Put support info here. Reminder: do not thank the handling coeditor anonymously or by name
-\begin{funding}
-We thank four anonymous referees. The Editor should not be thanked anonymously or by name in this footnote, or elsewhere in the paper. The first author gratefully acknowledges
-financial support from the National Science Foundation through Grant XXX-0000000.
-\end{funding}
-%
-\coeditor{\fnm{[Name} \snm{Surname}; will be inserted later]}
-
-\begin{abstract}
-The abstract should summarize the contents of the paper. It should be clear,
-descriptive, self-explanatory and not longer than 150 words. It should also be
-suitable for publication in abstracting services. Please avoid using math formulas
-as much as possible. We recommend 3--8 keywords and up to 3 JEL codes.
-\end{abstract}
-
-
-\begin{keyword}
-\kwd{First keyword}
-\kwd{second keyword}
-\kwd{third keyword}
-\end{keyword}
-
-\begin{keyword}[class=JEL] %% alphabetical order
-\kwd{First JEL}
-\kwd{second JEL}
-\end{keyword}
+%% The Abstract section is optional for supplementary information.
+%% To include it, uncomment the following lines:
+% \begin{abstract}
+%     % Write your abstract here
+% \end{abstract}
 
 \end{frontmatter}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Main text entry area:
+%%%% Main text entry area:                                             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}\label{s1}
 
 This template helps you to create a properly formatted \LaTeXe\ manuscript.
 Prepare your paper in the same style as used in this sample .pdf file.
-Try to avoid excessive use of italics and bold face; underlining is generally banned (except for exceptional cases). Please do not use any \LaTeXe\ or \TeX\ commands that affect the layout or formatting of your document (i.e., commands like \verb|\textheight|, \verb|\textwidth|, etc.). Note that the Introduction should be Section~\ref{s1} it should not imediately follow the abstract without a heading.
+Try to avoid excessive use of italics and bold face; underlining is generally banned (except for exceptional cases). Please do not use any \LaTeXe\ or \TeX\ commands that affect the layout or formatting of your document (i.e., commands like \verb|\textheight|, \verb|\textwidth|, etc.). Note that the Introduction should be Section~\ref{s1} it should not imediately follow the abstract without a heading.\looseness=1
 
-\section{Section headings}
+\section{Section Headings}
 Here are some subsections:
-\subsection{A subsection}
+\subsection{A Subsection}
 Regular text.
-\subsubsection{A subsubsection}
+\subsubsection{A Subsubsection}
 Regular text.
 
 \paragraph*{Paragraph heading} If you want to add mini-headings for paragraphs without numbers please use \verb|\paragraph*{}|.
@@ -187,13 +164,11 @@ colon or parentheses---like this.
 Generating an ellipsis \ldots\ with the right spacing
 around the periods requires using \verb|\ldots|.
 
-\textit{Theoretical Economics} is using longer spaces after periods, please add \verb|\| after periods that are not at the end of a sentence, in order to have regular spaces. For example, if there is an abbreviation (e.g., econ. theory) which is not the end of an article but appears in a middle of a sentence, please code it as \verb|(e.g., econ.\ theory)|. 
-
 \subsection{Citation}
 Only include in the reference list entries for which there are text citations,
 and make sure all citations are included in the reference list.
 Simple author and year cite: \citet{b1}. 
-Multiple bibliography items cite: \citet{b2,b3,b4}.
+Multiple bibliography items cite: \citet{b2,b3,b4,b5}.
 Author only cite: \citeauthor{b4}.
 Year only cite: (\citeyear{b4}). Citing bibliography with object \citet[Theorem 1]{b1}. Citing within brackets is done with the same commands (e.g., \citet{b2,b3,b4}).
 
@@ -250,7 +225,7 @@ as dull as the first paragraph. It should be coded between \verb|\begin{quotatio
 
 Please use regular counters (Theorem 1) as opposed to counters belonging on sections (Theorem 3.1). Results (Lemmas, Propositions, Theorems, Claims) can be on the same or different counters.
 
-\subsection{Examples for \emph{\texttt{plain}}-style environments}
+\subsection{Examples for \emph{\texttt{plain}}-Style Environments}
 
 \begin{theorem}\label{th1}
 This is the body of Theorem \ref{th1}.
@@ -290,7 +265,8 @@ This is the body of the proof of Theorem \ref{th2}.
 \end{proof}
 
 
-\subsection{Examples for \emph{\texttt{definition}}-style environments}
+\subsection{Examples for \emph{\texttt{definition}}-Style Environments}
+
 
 The following environments can be numbered or not; if numbered, they should be on different counters from results.
 
@@ -307,7 +283,7 @@ instead of \verb|\newtheorem|.
 This is the body of the remark. 
 \end{remark}
 
-\section{Equations and the like}
+\section{Equations and the Like}
 Only number equations to which there is a subsequent reference.
 See equations below (\ref{ccs})--(\ref{e7}). Please punctuate equations as you would punctuate a sentence, that is add a comma between two equations and add a period if it ends a sentence.
 
@@ -336,18 +312,17 @@ Note that variables made of more than one letter should use command \verb|\mathi
 e.g., $\mathit{sov}=550$, where $\mathit{sov}$ is sum of votes. Abbreviations used in subscripts or superscripts should use \verb|\mathrm|,
 e.g., $t_{\mathrm{max}}-t_{\mathrm{min}} =10$. Operator names should use \verb|\operatorname|, e.g. $\operatorname{AR}(1)$. Also, note that $\emptyset$ symbol is preferred to $\varnothing$.
 
-\section{Tables and figures}
+\section{Tables and Figures}
 Cross-references to labeled tables: As you can see in Table~\ref{sphericcase}
 and also in Table~\ref{parset}.
 
 Sample of cross-reference to figure: Figure~\ref{penG} shows that it is not easy to get something on paper. Note that figures will be in grayscale in the printed version.
-
 \begin{table*}
 \caption{The spherical case ($I_1=0$, $I_2=0$).}
 \label{sphericcase}
 \begin{tabular}{@{}lrrrrc@{}@{}}
 \hline
-Equil. Points,
+Equil. Points
 & \multicolumn{1}{c}{$x$}
 & \multicolumn{1}{c}{$y$}
 & \multicolumn{1}{c}{$z$}
@@ -355,22 +330,30 @@ Equil. Points,
 & S \\
 \hline
 $L_1$    & $-$2.485252241 & 0.000000000    & 0.017100631    & 8.230711648    & U \\
-$L_2$    & 0.000000000    & 0.000000000    & 3.068883732    & 0.000000000    & S \\
-$L_3$    & 0.009869059    & 0.000000000    & 4.756386544    & $-$0.000057922 & U \\
-$L_4$    & 0.210589855    & 0.000000000    & $-$0.007021459 & 9.440510897    & U \\
-$L_5$    & 0.455926604    & 0.000000000    & $-$0.212446624 & 7.586126667    & U \\
-$L_6$    & 0.667031314    & 0.000000000    & 0.529879957    & 3.497660052    & U \\
-$L_7$    & 2.164386674    & 0.000000000    & $-$0.169308438 & 6.866562449    & U \\
-$L_8$    & 0.560414471    & 0.421735658    & $-$0.093667445 & 9.241525367    & U \\
-$L_9$    & 0.560414471    & $-$0.421735658 & $-$0.093667445 & 9.241525367    & U \\
-$L_{10}$ & 1.472523232    & 1.393484549    & $-$0.083801333 & 6.733436505    & U \\
-$L_{11}$ & 1.472523232    & $-$1.393484549 & $-$0.083801333 & 6.733436505    & U \\
+$L_2$    & $-$2.485252241 & 0.000000000    & 0.017100631    & 8.230711648    & U \\
+$L_3$    & 0.000000000    & 0.000000000    & 3.068883732    & 0.000000000    & S \\
+$L_4$    & 0.000000000    & 0.000000000    & 3.068883732    & 0.000000000    & S \\
+$L_5$    & 0.009869059    & 0.000000000    & 4.756386544    & $-$0.000057922 & U \\
+$L_6$    & 0.009869059    & 0.000000000    & 4.756386544    & $-$0.000057922 & U \\
+$L_7$    & 0.210589855    & 0.000000000    & $-$0.007021459 & 9.440510897    & U \\
+$L_8$    & 0.210589855    & 0.000000000    & $-$0.007021459 & 9.440510897    & U \\
+$L_9$    & 0.455926604    & 0.000000000    & $-$0.212446624 & 7.586126667    & U \\
+$L_{10}$    & 0.455926604    & 0.000000000    & $-$0.212446624 & 7.586126667    & U \\
+$L_{11}$    & 0.667031314    & 0.000000000    & 0.529879957    & 3.497660052    & U \\
+$L_{12}$    & 0.667031314    & 0.000000000    & 0.529879957    & 3.497660052    & U \\
+$L_{13}$    & 2.164386674    & 0.000000000    & $-$0.169308438 & 6.866562449    & U \\
+$L_{14}$    & 2.164386674    & 0.000000000    & $-$0.169308438 & 6.866562449    & U \\
+$L_{15}$    & 0.560414471    & 0.421735658    & $-$0.093667445 & 9.241525367    & U \\
+$L_{16}$    & 0.560414471    & $-$0.421735658 & $-$0.093667445 & 9.241525367    & U \\
+$L_{17}$ & 1.472523232    & 1.393484549    & $-$0.083801333 & 6.733436505    & U \\
+$L_{18}$ & 1.472523232    & $-$1.393484549 & $-$0.083801333 & 6.733436505    & U \\
+$L_{19}$ & 1.472523232    & 1.393484549    & $-$0.083801333 & 6.733436505    & U \\
+$L_{20}$ & 1.472523232    & $-$1.393484549 & $-$0.083801333 & 6.733436505    & U \\
 \hline
 \end{tabular}
 \legend{This is how table note should be presented.
 Please do not use asterisks or bold face to denote statistical significance.
 We encourage authors to report standard errors and coverage sets or confidence intervals.}
-
 \end{table*}
 
 \begin{table}
@@ -391,11 +374,17 @@ Model
 \hline
 {Model 0} & $\beta_0$ & $-$12.29 & 2.29 & $-$18.04 & $-$11.99 & $-$8.56 \\
           & $\beta_1$ & 0.10     & 0.07 & $-$0.05  & 0.10     & 0.26    \\
-          & $\beta_2$ & 0.01     & 0.09 & $-$0.22  & 0.02     & 0.16    \\[6pt]
+          & $\beta_2$ & 0.01     & 0.09 & $-$0.22  & 0.02     & 0.16    \\
+          & $\beta_3$ & 0.22     & 0.17 & $-$0.10  & 0.22     & 0.55    \\[6pt]
 {Model 1} & $\beta_0$ & $-$4.58  & 3.04 & $-$11.00 & $-$4.44  & 1.06    \\
           & $\beta_1$ & 0.79     & 0.21 & 0.38     & 0.78     & 1.20    \\
-          & $\beta_2$ & $-$0.28  & 0.10 & $-$0.48  & $-$0.28  & $-$0.07 \\[6pt]
+          & $\beta_2$ & $-$0.28  & 0.10 & $-$0.48  & $-$0.28  & $-$0.07 \\
+          & $\beta_3$ & 0.22     & 0.17 & $-$0.10  & 0.22     & 0.55    \\[6pt]
 {Model 2} & $\beta_0$ & $-$11.85 & 2.24 & $-$17.34 & $-$11.60 & $-$7.85 \\
+          & $\beta_1$ & 0.73     & 0.21 & 0.32     & 0.73     & 1.16    \\
+          & $\beta_2$ & $-$0.60  & 0.14 & $-$0.88  & $-$0.60  & $-$0.34 \\
+          & $\beta_3$ & 0.22     & 0.17 & $-$0.10  & 0.22     & 0.55    \\[6pt]
+{Model 3} & $\beta_0$ & $-$11.85 & 2.24 & $-$17.34 & $-$11.60 & $-$7.85 \\
           & $\beta_1$ & 0.73     & 0.21 & 0.32     & 0.73     & 1.16    \\
           & $\beta_2$ & $-$0.60  & 0.14 & $-$0.88  & $-$0.60  & $-$0.34 \\
           & $\beta_3$ & 0.22     & 0.17 & $-$0.10  & 0.22     & 0.55    \\
@@ -411,36 +400,6 @@ $u(x)$ for $x$ in the discrete support of $F$. The solid lines show $u_\textrm{c
 \label{penG}
 \end{figure}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Example with single Appendix:            %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appendix}
-\section*{Title}\label{appn} %% if no title is needed, leave empty \section*{}.
-Appendices should be provided in \verb|{appendix}| environment. If there is only one appendix,
-then please refer to it in text as \ldots\ in the \hyperref[appn]{Appendix}.
-\end{appendix}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Example with multiple Appendixes:        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appendix}
-\section{Title of the first appendix}\label{appA}
-If there are more than one appendix, then please refer to it
-as \ldots\ in Appendix \ref{appA}, Appendix \ref{appB}, etc.
-
-\section{Title of the second appendix}\label{appB}
-\subsection{First subsection of Appendix \protect\ref{appB}}\label{appB1}
-
-If your appendix is long, make sure to divide it into subsections and refer to them in text. Use the standard \LaTeX\ commands for headings in \verb|{appendix}|.
-Headings and other objects will be numbered automatically.
-\begin{equation}
-\mathcal{P}=(j_{k,1},j_{k,2},\dots,j_{k,m(k)}). \label{path}
-\end{equation}
-
-Sample of cross-reference to formula (\ref{path}) in Appendix \ref{appB1}.
-Note that it is better to refer to Appendix \ref{appB1} as opposed to Appendix \ref{appB}, because it is easier for the reader to locate the necessary place. \end{appendix}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Bibliography:                            %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -448,40 +407,43 @@ Note that it is better to refer to Appendix \ref{appB1} as opposed to Appendix \
 %% including the first and last names, and date of publication.
 
 %% If your bibliography is in bibtex format, uncomment commands:
-%\bibliographystyle{te} % Style BST file
+%\bibliographystyle{ecta-fullname} % Style BST file
 %\bibliography{bibliography}  % Bibliography file (usually '*.bib')
 
 %% Or include bibliography directly:
 
-
 \begin{thebibliography}{}
 %
 \bibitem[\protect\citeauthoryear{Aumann}{1987}]{b1}
-Aumann, Robert (1987),
-``Correlated equilibrium as an expression of Bayesian rationality.''
-\textit{Econometrica}, 55(1), 1--18.
+\textsc{Aumann, Robert} (1987):
+``Correlated Equilibrium as an Expression of Bayesian Rationality,''
+\textit{Econometrica}, 55 (1), 1--18.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Peck}{1994}]{b2}
-Peck, James (1994),
-``Competition in transactions mechanisms: The emergence of competition.''
+\textsc{Peck, James} (1994):
+``Competition in Transactions Mechanisms: The Emergence of Competition,''
 Unpublished Manuscript, Ohio State University.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Enelow and Hinich}{1990}]{b3}
-Enelow, James, and Melvin Hinich, eds. (1990),
+\textsc{Enelow, James, and Melvin Hinich}, eds. (1990):
 \textit{Advances in the Spatial Theory of Voting}.
-Cambridge University Press, Cambridge, U.K.
+Cambridge, U.K.: Cambridge University Press.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Wittman}{1990}]{b4}
-Wittman, Donald (1990),
-``Spatial strategies when candidates have policy preferences.''
-In \textit{Advances in the Spatial Theory of Voting}
-(M. Hinich and J. Enelow, eds.), 66--98,
-Cambridge University Press, Cambridge, U.K.
+\textsc{Wittman, Donald} (1990):
+``Spatial Strategies when Candidates Have Policy Preferences,''
+in \textit{Advances in the Spatial Theory of Voting},
+ed. by M. Hinich and J. Enelow.
+Cambridge, U.K.: Cambridge University Press, 66--98.
 \endbibitem
 
- \end{thebibliography}
+\bibitem[\protect\citeauthoryear{Cahuc, Postel-Vinay and Robin}{2006}]{b5}
+\textsc{Cahuc, Pierre, Fabien Postel-Vinay, and Jean-Marc Robin} (2006): ``Supplement to `Wage Bargaining with On-the-Job Search: Theory and Evidence',''
+\textit{Econometrica Supplementary Material}, 74.
+\endbibitem
+\end{thebibliography}
 
 \end{document}
